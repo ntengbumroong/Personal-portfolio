@@ -1,0 +1,203 @@
+/* General Components */
+p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.head-container {
+    /* margin-top: 10em; */
+    padding-top: 5em;
+    text-align: center;
+    max-width: 80%;
+}
+
+#header {
+    /* font-size: 3em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(51, 84, 144);
+    padding-bottom: 1em;
+    padding: 10px 10%; */
+
+}
+
+/* nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    float: right;
+    margin-right: 2%;
+} */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    float: right;
+    font-size: large;
+    width:100%;
+}
+
+#navContent {
+    margin-right: 4%;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: None;
+    margin: 10px 20px;
+    margin-right: 1px;
+}
+
+.navbar ul li a {
+    color: black;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbarScroll.navbarDark {
+    background-color: rgb(173, 203, 232);
+}
+
+/* Section Title */
+.section-title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xxx-large;
+}
+
+
+
+/* Title components */
+#title {
+    text-align: center;
+    align-items: center;
+    padding-top: 8em;
+    padding-bottom: 8em;
+    background-image: url("/media/title_bg.webp");
+    height: 100vh;
+}
+
+#name {
+    font-size: 5em;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font: 'American Typewriter'; */
+}
+
+#title-hr {
+    height: 0.6em;
+    border-radius: 2em;
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    border: none;
+}
+
+#left-desc {
+    text-align: right;
+    border-right: 0.3em solid rgb(177, 185, 191);
+    padding-top: 1em;
+    padding-right: 3em;
+}
+
+#right-desc {
+    text-align: left;
+    border-left: 0.3em solid rgb(177, 185, 191);
+    padding-top: 1em;
+    padding-left: 3em;
+}
+
+
+/* About me components */
+#intro-row {
+    margin-bottom: 6em;
+}
+
+#intro {
+    text-align: left;
+    padding-left: 10%;
+}
+
+@media (min-width:768px) {
+    /* #prof {
+        text-align: right;
+     } */
+}
+
+@media (max-width:767px) {
+    #prof {
+        text-align: center;
+    }
+}
+
+
+#prof-pic {
+    max-width: 60%;
+    height: auto;
+    border-radius: 3em;
+    border: 0.2em solid lightgray;
+}
+
+@media (min-width:767px) {
+    .skills  {
+        border-right: 0.1em solid black;
+    }
+}
+
+
+.list-items {
+    text-align: left;
+    list-style: circle;
+    display: inline-block;
+}
+
+
+/* Experience Components */
+.company-logo {
+    padding-top: 3em;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1em;
+}
+
+.company-desc {
+    text-align: left;
+}
+
+.exp-row {
+    padding-top: 5em;
+}
+
+.sub-info {
+    font-size: 1.3em;
+}
+
+/* Project Components */
+.proj-col {
+    text-align: left;
+    padding-top: 2em;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+}
+
+.list-group {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 10em;
+}

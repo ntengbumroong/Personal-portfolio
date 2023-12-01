@@ -1,24 +1,220 @@
 <!doctype html>
 <html lang="en">
 
-<!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
--->
-
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta name="author" content="Nathan Tengbumroong">
+  <meta name="description" content="Nathan Tengbumroong's Personal Portfolio">
+  <script src="script/script.js" defer></script>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Nathan Tengbumroong's Portfolio</title>
 </head>
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+  <nav class="navbar sticky-top navbar-expand-sm navbarScroll">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#title">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid" id="title">
+    <div class="row">
+      <div class="col" id="name">
+        Nathan Tengbumroong
+      </div>
+    </div>
+    <hr id="title-hr">
+    <div class="row">
+      <div class="col" id="left-desc">
+        <h3>Computer Science @ UCI</h3>
+      </div>
+      <div class="col" id="right-desc">
+        <h3>Aspiring Software Engineer</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid head-container" id="about-me">
+    <div class="row">
+      <div class="col header">
+        <hr>
+          <b class="section-title">About Me</b>
+        <hr>
+      </div>
+    </div>
+    <div class="row" id="intro-row">
+      <div class="col" id="intro">
+        <p> Hi, my name is Nathan. I'm a recent graduate from the University of California, Irvine with a B.S. degree in computer science and a 
+          specialization in information. My college coursework has exposed me to so many interesting topics, such as full stack development, databases, 
+          algorithms, complex data structures, artificial intelligence, and more. I enjoy working on backend development in particular but am always 
+          open to learning more about other roles. I love learning new technologies and furthering my skills with familiar technologies. Needless to say, 
+          I’m excited and eager to dive into the field of software engineering!
+        </p>
+        <p>
+          In my spare time, I enjoy playing tennis and learning new songs on the piano. I've been playing tennis for over 8 years, and have been
+          playing piano for a similar amount of time as well.
+        </p>
+      </div>
+      <div class="col-md-6" id="prof">
+        <a href="https://www.linkedin.com/in/nat-tengbum/" target="_blank" rel="noopener noreferrer">
+          <img src="media/ProfPic.jpg" alt="Nathan Tengbumroong Profile Picture" id="prof-pic">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col skills">
+        <h3>Languages</h3>
+        <ul class="list-items">
+          <li>Python</li>
+          <li>Java</li>
+          <li>C/C++</li>
+          <li>JavaScript</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+      <div class="col skills">
+        <h3>Frameworks/Libraries</h3>
+        <ul class="list-items">
+          <li>React</li>
+          <li>Spring Boot</li>
+          <li>Pandas</li>
+          <li>PyQt5</li>
+          <li>CSS Bootstrap</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Other Tools</h3>
+        <ul class="list-items">
+          <li>Git/Github</li>
+          <li>Linux Bash</li>
+          <li>Heroku</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid head-container" id="experience">
+    <div class="row">
+      <div class="col header">
+        <hr>
+          <b class="section-title">Experience</b>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 company-logo">
+        <a href="https://www.virtium.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/media/virtium-logo.jpg" alt="Virtium LLC Logo" class="logo">
+        </a>
+      </div>
+      <div class="col-md-8 company-desc">
+        <h3>Virtium LLC | Software Engineer Intern</h3>
+        <span class="sub-info">Rancho Santa Margarita, CA | June 2022 - September 2022</span>
+        <br><br>
+        <p>
+          At Virtium, I primarily worked on Virtium's internal testing software GUI. I utilized Python and the 
+          PyQt5 framework to add new features, fix bugs, and update existing functionalities. The features I updated and added to the GUI 
+          were used to test Virtium's proprietary SATA and NVMe solid state drives for endurance, speed, and performance under normal and 
+          extreme conditions.
+        </p>
+        <p>
+          Some other tasks I performed included creating a GUI tool for checking/removing hidden files on Linux
+          systems and keeping track of tasks using Jira.
+        </p>
+      </div>
+    </div>
+    <div class="row exp-row">
+      <div class="col-md-4 company-logo">
+        <a href="https://zothacks.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/media/zothacks.png" alt="Zothacks Event Logo" class="logo">
+        </a>
+      </div>
+      <div class="col-md-8 company-desc">
+        <h3>ZotHacks Hackathon | Participant</h3>
+        <span class="sub-info">Irvine, CA (Remote) | November 2020</span>
+        <br><br>
+        <p>
+          ZotHacks was my very first hackathon and a great learning experience. Me and two other teammates built
+          a simple two-page weather app to display weather information for any city along with an image relating to the city. We
+          did this using Node.js on the backend and using the OpenWeatherMap API and Unsplash Image API.
+        </p>
+        <p>
+          You can check it out <a href="https://any-destination.netlify.app/" target="_blank" rel="noopener noreferrer">here</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid head-container" id="projects">
+    <div class="row">
+      <div class="col header">
+        <hr>
+        <b class="section-title">Projects</b>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col proj-col d-flex justify-content-center">
+        <div class="card border-success" style="width: 26rem;">
+          <img src="/media/healthy.jpg" class="card-img-top" alt="Unsplash API Example">
+          <div class="card-body">
+            <h4 class="card-title">ZotLife</h4>
+            <p class="card-text">
+              A mobile iOS app for improving student health and wellness. ZotLife provides suggestions for meals, sleep time,
+              and/or exercises in order to help the user reach their desired health goal. I worked with 3 other teammates on this
+              project.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Swift, SwiftUI</li>
+            <li class="list-group-item">SQLite</li>
+            <li class="list-group-item">FoodData Central API, API Ninjas </li>
+          </ul>
+          <div class="card-body">
+            <a href="https://drive.google.com/file/d/1d9zCM391p1-tVsfClYuXGBMcQxEdzCUG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="card-link">Demo</a>
+            <!-- <a href="https://github.com/amberliang0/zotlife" target="_blank" rel="noopener noreferrer" class="card-link" >Github</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col proj-col d-flex justify-content-center">
+        <div class="card border-success" style="width: 26rem;">
+          <img src="/media/FabFlix.jpg" class="card-img-top" alt="Movie Services Examples">
+          <div class="card-body">
+            <h4 class="card-title">FabFlix</h4>
+            <p class="card-text">A web service for browsing and renting millions of different movies, which utilizes a search
+              function to display movies based on rating, title, year released, director, and more. 
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">React, Bootstrap</li>
+            <li class="list-group-item">Java, Spring Boot, Axios, MySQL</li>
+            <li class="list-group-item">Stripe API</li>
+          </ul>
+          <!-- <div class="card-body">
+            <a href="https://github.com/ntengbumroong" class="card-link">Github</a>
+          </div> -->
+        </div> 
+      </div>
+    </div>
+  </div>
+  <footer>
+    <hr>
+    <p>Designed By Nathan Tengbumroong</p>
+    Contact me:
+    <p><a href="mailto:ntengbumroong@gmail.com">ntengbumroong@gmail.com</a></p>
+  </footer>
+
 </body>
 </html>
